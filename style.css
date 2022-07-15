@@ -15,11 +15,6 @@ body{
     scroll-padding-top: 1.5rem ;
     scroll-behavior: smooth;
    }
-:root{
-    --main-color: #ff2c1f;
-    --text-color: #020307;
-    --bg-color: #fff;
-}
 ul{
     list-style:none;
 }
