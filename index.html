@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Movie Booking Website</title>
+       <link rel="stylesheet" href="style.css"/>
+       <link rel="shortcut icon" href="imgs/fav icon.png"/>
+       <link  href="https://fonts.googleapis.com/css?family-Montserrat:ught@300;400;500;600&display-swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">
+       <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
+    <script src="https://kit.fontawesome.com/fbd8d3d24e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--header section-->
+           <nav>
+            
+               <a href="#" class="logo">
+                   <img src="imgs/logo.png"></img>
+                   <span>B</span>ook Your Show
+               </a>
+             <!--menu btn-->
+             <input type="checkbox" class="menu-btn" id="menu-btn"/>
+             <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+             </label>
+
+               <!--menu-->
+               <ul class="menu">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#movies">Upcoming</a></li>
+                <li><a href="#booking">Bookings</a></li>
+                <li><a href="#recent-movies">Now Showing</a></li>
+                <li><a href="#About">About us</a></li>
+               </ul>
+               <!--search-->
+               <div class="search">
+                <input type="text" placeholder="Find Theatres near you"/>
+                <i class="fas fa-search"></i>
+                </div>
+               
+                <div class="icons">
+                <i class="fas fa-user" id="login-btn"></i>
+               </div>
+               </nav>
+<!--login form container-->
+         <div class="login-form-container">
+            <i class="fas fa-times" id="form-close"></i>
+
+
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="enter your email" value="" required>
+                <input type="password" class="box" placeholder="enter your password" required>
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+                <p>Forget Password?<a href="#">Click Here</a></p>
+                <p>Don't have an Account?<a href="#">Register Now</a></p>
+
+            </form> 
+         </div>
+
+<!--HOme -->
+       <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="imgs/home4.jpg" alt="">
+                <div class="home-text">
+                    <span>Grab a seat</span>
+                    <h1>Theatres Near You </h1>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <!--box 2-->
+            <div class="swiper-slide container">
+                <img src="imgs/ticket1.jpg" alt="xyz">
+                <div class="home-text">
+                    <span></span>
+                    <h1>Best Shows <br> Best Experience</h1>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+           <!--box 3-->
+            <div class="swiper-slide container">
+                <img src="imgs/home6.jpg" alt="xyz">
+                <div class="home-text">
+                    <span></span>
+                    <h1>Book at <br>20% off now</h1>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            
+          </div>
+         
+          <div class="swiper-pagination"></div>
+       </section>
+       <!--Movies-->
+       <section class="movies" id="movies">
+        <h2 class="heading">Opening This Week</h2>
+        <!--movies container-->
+        <div class="movies-container">
+            <!--box 1-->
+           <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n1.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Shamshera</h3>
+                    <span>120 min | Action</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 2-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n2.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Black Adam</h3>
+                    <span>116 min | Action, Adventure</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 3-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n3.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Sabhash Mithu</h3>
+                    <span>150 min | Drama/Sport</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 4-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n4.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Lal Singh Chaddha</h3>
+                    <span>125 min | Comedy</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 5-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n5.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Avatar 2</h3>
+                    <span>180 min | Sci-fi/Action</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 6-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n6.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Thor:Love and Thunder</h3>
+                    <span>119 min | Action/Adventure</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 7-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n7.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Raksha Bandhan</h3>
+                    <span>120 min | Comedy/Drama</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 8-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n8.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Brahmastra</h3>
+                    <span>140 min | Fantasy</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 9-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n9.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Yodha</h3>
+                    <span>130 min | Adventure</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!--box 10-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imgs/n10.jpg" alt="">  
+                </div>
+                <div class="box-body">
+                    <h3>Where the Crawdads Sing</h3>
+                    <span>125 min | Mystery</span> 
+                </div>
+                <div class="box-footer">
+                    <button>Book Now</button>
+                </div>
+            </div>  
+            
+        </div>
+    </section>
+
+    <!--bookings section-->
+    <section class="booking" id="booking">
+        <h1 class="heading">
+         Book Now
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="imgs/booking.jpg" alt="">
+            </div>
+            <form action="" method="post">
+                <div class="inputBox">
+                    <h3>Select Area</h3>
+                    <select>
+                        <option value="">---</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Delhi NCR">Delhi NCR</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <h3>Select Theatre</h3>
+                    <select>
+                        <option value="">---</option>
+                        <option value="Mumbai">PVR</option>
+                        <option value="Pune">GOLD Digital</option>
+                        <option value="Delhi NCR">Eyelex</option>
+                    </select>
+                    
+                </div>
+                <div class="inputBox">
+                    <h3>Select Movie</h3>
+                    <input type="text" placeholder="Movie name">
+                </div>
+
+                <div class="inputBox">
+                    <h3>Select Seats</h3>
+                    <input type="number" placeholder="no. of people">
+                </div>
+
+                <div class="inputBox">
+                    <h3>Select Date</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Select Time</h3>
+                    <input type="time">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+
+    <!--Now showing section-->
+        <section class="recent-movies" id="recent-movies">
+            <h2 class="heading">Now Showing</h2>
+         <div class="now-showing">
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r7.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Khuda Hafiz : Chapter 2</h3>
+                        <p>A  | Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;91%
+                        &nbsp;&nbsp;&nbsp;10 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>777 Charlie</h3>
+                        <p>UA  | Telugu,Tamil,Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;96%
+                        &nbsp;&nbsp;&nbsp;56 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jurassic World</h3>
+                        <p>UA  | English,Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;67%
+                        &nbsp;&nbsp;&nbsp;43 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Rashtra Kavach: OM</h3>
+                        <p>UA  | Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;61%
+                        &nbsp;&nbsp;&nbsp;4 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Top Gun: Maverick</h3>
+                        <p>UA  | English,Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;92%
+                        &nbsp;&nbsp;&nbsp;46 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r8.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Rocketry</h3>
+                        <p>A  | Hindi,Tamil,Telugu
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;96%
+                        &nbsp;&nbsp;&nbsp;36 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r1.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Bhool Bhulaiyaa 2</h3>
+                        <p>UA  | Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;90%
+                        &nbsp;&nbsp;&nbsp;65 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r9.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Vikram: Hitlist</h3>
+                        <p>UA  | Hindi,Telugu
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;95%
+                        &nbsp;&nbsp;&nbsp;68 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Morbius</h3>
+                        <p>UA  | English,Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;55%
+                        &nbsp;&nbsp;&nbsp;43 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="items-img">
+                        <img src="imgs/r10.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Doctor Strange 2</h3>
+                        <p>UA  | English,Hindi
+                        </p>
+                        <div class="heart">
+                        <a href="#"><i class="fas fa-heart">&nbsp;94%
+                        &nbsp;&nbsp;&nbsp;65 k&nbsp;&nbsp; Votes</i>
+                    </a>
+                         </div>
+                        <a href="#">
+                        <button>Book Tickets</button></a>
+                        <div class="trailer-btn">
+                        <a href="#">
+                        <button>Play Trailer</button>
+                        </a></div>
+                    </div>
+                </div>
+        
+            </div>
+    </section>
+
+    <!--About Us-->
+    <section class="About" id="About">
+        <h2 class="heading">About Us</h2>
+        <div class="about">
+            <!--<div class="about-img">
+                    <img src="imgs/card.png" alt="">
+            </div>-->
+            <div class="inner-section">
+                <h1>About</h1>
+                <p class="text">
+                    Hello! There this the admin of this page. This page is basically made for
+                    all those Movie lovers or early-birds who are always ready to grab a seat in 
+                    the Theatre whenever a new movie arrives. This website helps you to book your movies seats
+                    at your nearest theatres as fast as a blink of an eye. So, grab your popcorn and enjoy your show now.
+
+                    (This page is made by using HTML, CSS and a little bit of Javascript as a project for the Internship purpose. )
+                </p>
+                <ul class="icon">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <div class="more">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer" id="footer">
+     <footer>
+        <ul class="social-icon">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#movies">Upcoming</a></li>
+            <li><a href="#booking">Bookings</a></li>
+            <li><a href="#recent-movies">Now Showing</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+        <p> Copyright © 2022 Created by Debangshi Nath | All Rights Reserved.</p>
+     </footer>
+    </section>
+       
+       <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+         <script src="script.js"></script>
+
+               </body>
+               </html>
