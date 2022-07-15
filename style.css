@@ -63,7 +63,7 @@ nav .menu li a{
     display: flex;*/
     font-size: 1rem;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: #020307;
     /*letter-spacing: 1px;*/
 }
 
@@ -242,7 +242,7 @@ margin-right: 2rem;
     text-transform: uppercase;
 }
 .home-text h1{
-    color: var(--bg-color);
+    color: #fff;
     font-size: 5rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 0.5rem dotted #000;
